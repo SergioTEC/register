@@ -25,10 +25,10 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="new-user.php">Novo Usuário</a>
+            <a class="nav-link" href="?page=new">Novo Usuário</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="list-user.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="?page=list" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Listar Usuários
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,6 +49,7 @@
     <div class="row">
       <div class="col mt-5">
         <?php
+        include("config.php");
         switch (@$_REQUEST["page"]) {
           case "new":
             include("new-user.php");
@@ -56,8 +57,11 @@
           case "list":
             include("list-user.php");
             break;
+          case "save":
+            include("save-user.php");
+            break;
           default:
-            print "Bem vindo";
+            print "<h1>Bem vindo!</h1>";
         }
         ?>
       </div>
