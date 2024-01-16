@@ -11,10 +11,10 @@ switch ($_REQUEST["action"]) {
         $res = $connection->query($sql);
 
         if ($res == true) {
-            print "<script>alert('Cadastrado com sucesso');</script>";
+            print "<script>alert('Cadastrado com sucesso!');</script>";
             print "<script>location.href='?page=list';</script>";
         } else {
-            print "<script>alert('Não foi possivel efetuar o cadastro');</script>";
+            print "<script>alert('Não foi possivel efetuar o cadastro!');</script>";
             print "<script>location.href='?page=list';</script>";
         }
         break;
