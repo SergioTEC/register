@@ -3,8 +3,23 @@ Project to practice CRUD in PHP + MySQL
 
 ---
 
-## Project in progress
+## Technologies
+- HTML
+- Bootstrap(CSS)
+- PHP
+- MySQL
 
-<img alt="Project in progress" src="https://user-images.githubusercontent.com/48964231/184055877-02e2db10-79a7-4d22-b444-5a6bc5554e1e.png" width="20%">
+---
+
+## Project Layout
+
+### Home
+<img alt="Home" src="https://github.com/SergioTEC/register/assets/48964231/4eacc71c-daa5-4e0f-9fc6-a2d520a90294" width="60%">
+
+### New User
+<img alt="New User" src="https://github.com/SergioTEC/register/assets/48964231/9d89f696-b011-43a6-b8d6-77cc0f0cb98e" width="85%">
+
+### List Users
+<img alt="List Users" src="https://github.com/SergioTEC/register/assets/48964231/bb1d7df0-977c-420e-8bd4-ae0af67952a6" width="85%">
 
 ---
