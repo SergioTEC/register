@@ -60,6 +60,9 @@
           case "save":
             include("save-user.php");
             break;
+          case "edit":
+            include("edit-user.php");
+            break;
           default:
             print "<h1>Bem vindo!</h1>";
         }

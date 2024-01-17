@@ -24,13 +24,16 @@ if ($qty > 0) {
         print "<td>" . $row->email . "</td>";
         print "<td>" . $row->birth_date . "</td>";
         print "<td>
-            <button class='btn btn-success'>Editar</button>
-            <button class='btn btn-danger'>Excluir</button>
+            <button onclick=\"location.href='?page=edit&id=" . $row->id . "';\"
+            class='btn btn-success'>Editar</button>
+
+            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=save&action=delete&id=" . $row->id . "';}else{false;}\"
+            class='btn btn-danger'>Excluir</button>
             </td>";
         print "</tr>";
     }
     print "</table>";
 } else {
-    print "<p class='alert alert-danger'>Não encontrou nenhum resultado!</p>";
+    print "<p class='alert alert-danger'>Não foi encontrado nenhum resultado!</p>";
 }
 ?>
